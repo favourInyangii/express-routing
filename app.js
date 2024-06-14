@@ -1,18 +1,19 @@
 const express = require('express');
 const path = require('path');
-const app = express();
-const workingHours = require('./middleware/workingHours');
+const workingHours = require('./middlewear/workingHours');
 
-// Set view engine
+const app = express();
+
+// Set view engine to EJS
 app.set('view engine', 'ejs');
 
-// Middleware to serve static files
+// Middleware to serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Custom middleware to check working hours
 app.use(workingHours);
 
-// Routes
+// Define routes
 app.get('/', (req, res) => {
     res.render('index');
 });
