@@ -1,0 +1,62 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #941c1c;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Specific styles for pages */
+body.home {
+    background-image: url('/Adult\ Woman\ Relaxing\ in\ Spa\ Salon\ with\ Hot\ Stones\ on\ Body\ Stock\ Photo\ -\ Image\ of\ flower\,\ adult_\ 34563340.jpg');
+}
+
+body.services {
+    background-image: url('/The\ Spa\ at\ 45\ Park\ Lane\ _\ Dorchester\ Collection.jpg');
+}
+
+body.contact {
+    background-image: url('/download\ \(21\).jpg');
+}
+
+/* Main content styles */
+main {
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+footer {
+    text-align: center;
+    padding: 7px 0;
+    background-color: rosybrown;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
